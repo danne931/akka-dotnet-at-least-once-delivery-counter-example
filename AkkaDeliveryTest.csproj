@@ -8,13 +8,18 @@
     <WarningsAsErrors>CS8625, CS8604</WarningsAsErrors>
   </PropertyGroup>
 
+  <PropertyGroup Label="SharedVersions">
+    <AkkaVersion>1.5.55</AkkaVersion>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Akka.Cluster.Hosting" Version="1.5.22" />
-    <PackageReference Include="Akka.Cluster.Sharding" Version="1.5.22" />
-    <PackageReference Include="Akka.Cluster.Tools" Version="1.5.22" />
-    <PackageReference Include="Akka.Hosting" Version="1.5.22" />
-    <PackageReference Include="Akka.Persistence" Version="1.5.22" />
-    <PackageReference Include="Akka.Persistence.Hosting" Version="1.5.22" />
+    <PackageReference Include="Akka.Cluster.Hosting" Version="$(AkkaVersion)" />
+    <PackageReference Include="Akka.Cluster.Sharding" Version="$(AkkaVersion)" />
+    <PackageReference Include="Akka.Cluster.Tools" Version="$(AkkaVersion)" />
+    <PackageReference Include="Akka.Hosting" Version="$(AkkaVersion)" />
+    <PackageReference Include="Akka.Persistence" Version="$(AkkaVersion)" />
+    <PackageReference Include="Akka.Persistence.Hosting" Version="$(AkkaVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
   </ItemGroup>
 
 </Project>
